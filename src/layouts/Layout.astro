@@ -18,12 +18,12 @@ const { title } = Astro.props;
 	</head>
 
 	<body>
-		<header class="bg-slate-800 h-11 text-gray-100">
+		<header class="bg-black flex items-center h-20 text-gray-100 ">
 			<div
 				class="mx-auto container max-w-[1200px] flex items-center w-full justify-between"
 			>
 				<svg
-					class="w-20 fill-slate-50"
+					class="w-32 fill-slate-50"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 823.46 225.25"
 					><g fill-rule="evenodd" class="svelte-1gcdbl9"
@@ -38,17 +38,38 @@ const { title } = Astro.props;
 						></path></g
 					></svg
 				>
-				<menu class="flex h-full gap-5">
-					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate">Premiun</a></li>
-					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate">Support</a></li>
-					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate">Downlond</a></li>
-					<li>|</li>
-					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate">Sign up</a></li>
-					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate">Log in</a></li>
+				<menu class="flex h-full gap-6 ">
+					<li class="relative group"><a href="#"class="hover:text-slate-500 flex items-center text-slate h-20">Premiun</a>
+					<div class="bg-slate-600 absolute top-20 group-hover:block hidden w-60">
+						<a href="#" class="text-lg text-white block py-3 px-4 hover:bg-slate-800"> Premiun individual 
+							<span class="block text-xs"> 1 cuenta para una sola persona</span>
+						</a>
+					</div>
+					</li>
+					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate h-20">Support</a></li>
+					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate h-20">Downlond</a></li>
+					<li class="py-[26px]">|</li>
+					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate h-20">Sign up</a></li>
+					<li><a href="#"class="hover:text-slate-500 flex items-center text-slate h-20">Log in</a></li>
 				</menu>
 			</div>
 		</header>
-		<div
+		
+		<div class="h-96 bg-gradient-to-b from-red-300/60 to-black to-40%"></div>
+		<div class="hover:scale-105 transition-transform hover:cursor-pointer hover:bg-red-100 font-bold py-3 px-4 w-max rounded-full m-6 bg-red-200"> 
+			Probar gratis durante un mes 
+		</div>
+	</body>
+</html>
+<style></style>
+
+
+
+
+
+
+<!-- BOTON 
+<div 
 			class="group items-center inline-flex transition-colors hover:cursor-pointer hover:bg-blue-600 bg-blue-500 text-white px-2 py-1 rounded"
 		>
 			<svg
@@ -80,8 +101,4 @@ const { title } = Astro.props;
 					stroke-linejoin="round"
 					d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
 			</svg>
-		</div>
-		<div class="h-16 bg-gradient-to-b from-red-400 "></div>
-	</body>
-</html>
-<style></style>
+		</div>-->
